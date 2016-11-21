@@ -57,7 +57,7 @@ public class DianruiCenterFragment extends BaseFragment  {
         button = new Button(getActivity());
         button.setText("关闭(15)");
         button.setVisibility(View.GONE);
-        button.setTextSize(13);
+        button.setTextSize(14);
         button.setTextColor(Color.WHITE);
         RelativeLayout.LayoutParams lpButton = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lpButton.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
