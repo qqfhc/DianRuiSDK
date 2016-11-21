@@ -49,7 +49,6 @@ public class DianruiBannerInFragment extends BaseFragment  {
         layoutParams1.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
         layout.setLayoutParams(layoutParams1);//设置根布局的宽高属性以及margin等
         layout.setOrientation(LinearLayout.VERTICAL);//设置线性布局的方向
-
         //隐藏
         Button button = new Button(getActivity());
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, screenHeigh / 25);
@@ -61,10 +60,9 @@ public class DianruiBannerInFragment extends BaseFragment  {
         title_relativeLayout.setLayoutParams(new RelativeLayout.LayoutParams(android.widget.RelativeLayout.LayoutParams.MATCH_PARENT, screenHeigh / 6));
 //        title_relativeLayout.setBackgroundColor(android.graphics.Color.parseColor("#888888"));//设置背景色
         layout.addView(title_relativeLayout);
-
         //关闭
         final ImageView imageView = new ImageView(getActivity());
-        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(screenHeigh / 50, screenHeigh / 50);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(screenHeigh / 51, screenHeigh / 50);
         layoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
 //        imageView.setImageResource(R.mipmap.close);
         new ImageLoading().showImg("http://img.jjtxtx.com/sdk/close.png").execute(new Target() {
